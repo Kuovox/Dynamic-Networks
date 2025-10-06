@@ -53,7 +53,7 @@ python graph_analysis.py graph_file.gml [OPTIONS]
 1. **Partition into 3 components, plot clustering, simulate 5 failures, save output**
 
 ```bash
-python graph_analysis.py sample_graph.gml --components 3 --plot C --simulate_failures 5 --output output.gml
+python graph_analysis.py sample_graph.gml --components 3 --plot C --simulate_failures 2 --output output.gml
 ```
 
 2. **Temporal simulation**
