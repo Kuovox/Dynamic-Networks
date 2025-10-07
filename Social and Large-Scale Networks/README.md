@@ -85,7 +85,7 @@ A,B,3,remove
 
 ---
 
-## 🧮 Example Usages
+## 🧮 Example Usages & Outputs
 
 ### 1️⃣ Partition and Plot Clustering
 
@@ -101,8 +101,6 @@ python graph_analysis.py sample_graph.gml --components 3 --plot C --output out.g
 [INFO] Graph exported to out.gml
 ```
 
----
-
 ### 2️⃣ Simulate Failures
 
 ```bash
@@ -117,8 +115,6 @@ python graph_analysis.py sample_graph.gml --simulate_failures 3
        Avg shortest path: 0.000
 ```
 
----
-
 ### 3️⃣ Verify Homophily and Balance
 
 ```bash
@@ -131,8 +127,6 @@ python graph_analysis.py sample_graph.gml --verify_homophily --verify_balanced_g
 [INFO] Homophily t-test: t=1.234, p=0.217
 [INFO] Balanced graph check: 0 unbalanced triangles.
 ```
-
----
 
 ### 4️⃣ Temporal Simulation
 
@@ -148,8 +142,6 @@ python graph_analysis.py sample_graph.gml --temporal_simulation edges.csv
 [TIME] Added edge B-C
 [TIME] Removed edge A-B
 ```
-
----
 
 ### 5️⃣ Robustness Check
 
