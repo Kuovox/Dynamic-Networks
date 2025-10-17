@@ -1,0 +1,10 @@
+graph [
+  node [ id "A" label "Alice" color "red" ]
+  node [ id "B" label "Bob" color "blue" ]
+  node [ id "C" label "Carol" color "red" ]
+  node [ id "D" label "Dan" color "blue" ]
+  edge [ source "A" target "B" weight 1.0 sign 1 ]
+  edge [ source "A" target "C" weight 1.0 sign 1 ]
+  edge [ source "B" target "D" weight 1.0 sign -1 ]
+  edge [ source "C" target "D" weight 1.0 sign 1 ]
+]
