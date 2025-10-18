@@ -152,4 +152,3 @@ The program includes basic validation for:
 - `traffic_analysis.py`
 - `README.md`
 - `traffic.gml` (sample input)
-- Output screenshots or plots (optional)
