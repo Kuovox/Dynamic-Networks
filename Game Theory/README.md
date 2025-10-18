@@ -70,10 +70,11 @@ This reads the directed graph `traffic.gml` and computes the Travel Equilibrium 
 ```gml
 graph [
   directed 1
-  node [ id 0 label "Start" ]
-  node [ id 1 label "A" ]
-  node [ id 2 label "B" ]
-  node [ id 3 label "End" ]
+
+  node [ id 0 label 0 ]
+  node [ id 1 label 1 ]
+  node [ id 2 label 2 ]
+  node [ id 3 label 3 ]
 
   edge [ source 0 target 1 a 1 b 0 ]
   edge [ source 1 target 3 a 0 b 1 ]
