@@ -87,7 +87,7 @@ graph [
   
 ---
 
-## Example Usage & Output
+## Example Usage
 ``` bash
 python market_strategy.py market.gml --interactive
 ```
@@ -96,12 +96,15 @@ Output:
 [INFO] Loaded bipartite market with 4 nodes and 4 edges.
 
 --- Round 1 ---
-Matching: {(2, 0)}
-[UPDATE] Seller 1 price increased to 21
+Matching: {(3, 1), (2, 0)}
+Active buyers: [2, 3]
+Inactive buyers: []
+[Prices] 0:10.0, 1:20.0
+[INFO] Market cleared: all active buyers are matched.
 
---- Round 2 ---
-Matching: {(2, 0), (3, 1)}
-[INFO] Market cleared successfully.
+[FINAL PRICES]
+Seller 0: price = 10.0
+Seller 1: price = 20.0
 ```
 
 If `--plot` is used, the tool will display:
@@ -129,7 +132,7 @@ If `--plot` is used, the tool will display:
 | File / Output     | Description                                            |
 | ----------------- | ------------------------------------------------------ |
 | Console Output    | Displays iterative matching results and price updates. |
-| `plot.png` (auto) | Graph visualization when using `--plot` (optional).    |
+| `plot.png` (auto) | Graph visualization when using `--plot`.    |
 
 ---
 
