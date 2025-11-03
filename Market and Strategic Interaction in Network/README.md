@@ -142,8 +142,6 @@ If `--plot` is used, the tool will display:
 
 ## Citations
 
-1. https://networkx.org/documentation/stable/reference/readwrite/generated/networkx.readwrite.gml.read_gml.html
-
-2. https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.bipartite.matching.hopcroft_karp_matching.html
-
-3. https://medium.com/%40bragadeeshs optimizing-networks-with-bipartite-graphs-a-practical-guide-7c94e9de0bc6 
+1) NetworkX Developers. (2025). read_gml — NetworkX 3.5 documentation. Retrieved from https://networkx.org/documentation/stable/reference/readwrite/generated/networkx.readwrite.gml.read_gml.html
+2) NetworkX Developers. (2025). hopcroft_karp_matching — NetworkX 3.5 documentation. Retrieved from https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.bipartite.matching.hopcroft_karp_matching.html
+3) Sundararajan, B. (2024, February 5). Optimizing Networks with Bipartite Graphs: A Practical Guide. Medium. Retrieved from https://medium.com/%40bragadeeshs/optimizing-networks-with-bipartite-graphs-a-practical-guide-7c94e9de0bc6
