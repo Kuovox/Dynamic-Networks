@@ -137,3 +137,13 @@ If `--plot` is used, the tool will display:
 - `market_strategy.py`
 - `README.md`
 - `market.gml` (sample input)
+
+---
+
+## Citations
+
+1. https://networkx.org/documentation/stable/reference/readwrite/generated/networkx.readwrite.gml.read_gml.html
+
+2. https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.bipartite.matching.hopcroft_karp_matching.html
+
+3. https://medium.com/%40bragadeeshs optimizing-networks-with-bipartite-graphs-a-practical-guide-7c94e9de0bc6 
