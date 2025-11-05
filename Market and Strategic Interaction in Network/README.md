@@ -107,9 +107,8 @@ Seller 0: price = 10.0
 Seller 1: price = 20.0
 ```
 
-If `--plot` is used, the tool will display:
-- The initial bipartite graph
-- Preference graph on each round (buyers linked only to their current top seller)
+If `--plot` is used, the tool will generate a .png file of:
+- The bipartite/preference graph on each round (buyers linked only to their current top seller)
 
 ---
 
