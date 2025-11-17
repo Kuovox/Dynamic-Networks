@@ -37,3 +37,78 @@ Install the required dependencies:
 pip install networkx matplotlib requests beautifulsoup4
 ```
 
+---
+
+## Running the Program
+
+Execute the script from the terminal:
+
+```bash
+python ./page_rank.py [OPTIONS]
+```
+
+### Examples
+1. Crawl the web, compute PageRank, save graph, and generate log-log plot:
+
+```bash
+python ./page_rank.py \
+  --crawler crawler.txt \
+  --loglogplot \
+  --crawler_graph out_graph.gml \
+  --pagerank_values node_rank.txt
+```
+
+2. Use an existing graph instead of crawling:
+
+```bash
+python ./page_rank.py \
+  --input graph.gml \
+  --loglogplot \
+  --pagerank_values node_rank.txt
+```
+
+---
+
+## Command-Line Options
+
+| Option / Argument        | Description                                                                                      |
+| ------------------------ | ------------------------------------------------------------------------------------------------ |
+| `--crawler FILE`         | Reads crawling configuration from `crawler.txt` and generates a directed graph via web scraping. |
+| `--input graph.gml`      | Loads an existing directed graph in GML format instead of crawling.                              |
+| `--loglogplot`           | Produces a log-log degree distribution plot (`loglog_plot.png`).                                 |
+| `--crawler_graph FILE`   | Saves the generated crawler graph to a GML file.                                                 |
+| `--pagerank_values FILE` | Outputs PageRank values of all nodes to a text file.                                             |
+
+---
+
+## Crawler Input File Format (`crawler.txt`)
+
+The crawler configuration file contains:
+
+```php-template
+<max_nodes>
+<domain>
+<seed_url_1>
+<seed_url_2>
+...
+```
+
+Example:
+
+```ruby
+100
+https://dblp.org/pid
+https://dblp.org/pid/e/PErdos.html
+https://dblp.org/pid/s/PaulGSpirakis.html
+https://dblp.org/pid/89/8192.html
+```
+
+- max_nodes: Maximum nodes/pages to crawl
+- domain: Only pages beginning with this prefix are visited
+- seed URLs: BFS starting points
+
+All crawled pages must belong to the specified domain (e.g., `https://dblp.org/pid`).
+
+---
+
+## Features and Workflow
