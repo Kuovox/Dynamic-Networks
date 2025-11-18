@@ -107,6 +107,8 @@ https://dblp.org/search?q=computer+science
 - domain: Only pages beginning with this prefix are visited
 - seed URLs: BFS starting points
 
+To avoid generating a star graph, seed pages were chosen from DBLP sections that contain many interlinked HTML pages (e.g., `/search`, `/faq`, `/about/`). These pages tend to link to multiple other pages within the domain, producing a more realistic, interconnected web graph as required by the assignment.
+
 All crawled pages must belong to the specified domain (e.g., `https://dblp.org/pid`).
 
 ---
@@ -120,6 +122,9 @@ All crawled pages must belong to the specified domain (e.g., `https://dblp.org/p
 - Builds a directed graph where:
   - Node = web page URL
   - Edge: A → B if A contains a hyperlink to B
+- **Note on robots.txt:**  
+  - DBLP restricts crawling of many `/pid/` and `/rec/` pages via robots.txt.
+  - For educational purposes, robots.txt checks were disabled so the crawler could access pages necessary for generating the graph dataset.
  
 ### 2. Graph Handling
 The program supports two graph modes:
@@ -165,6 +170,7 @@ This plot helps reveal power-law degree behavior commonly found in web graphs.
 | `out_graph.gml`   | Directed graph produced by the crawler.    |
 | `node_rank.txt`   | PageRank values of all pages in the graph. |
 | `loglog_plot.png` | Log-log degree distribution of the graph.  |
+| `crawler_graph.png` | Visualization of an induced subgraph (11 nodes). This graph highlights cross-links in the crawled graph and demonstrates a non-star, web-like structure. |
 
 ---
 
@@ -177,7 +183,7 @@ This plot helps reveal power-law degree behavior commonly found in web graphs.
     - BFS traversal
     - Only HTML pages
     - Only the given domain
-    - Avoids generating trivial star graphs (required by assignment)
+    - Crawling configuration was chosen to avoid trivial star graphs (as required by the assignment). Seeds were selected from DBLP pages with rich internal link structures (e.g., `/search`, `/about/`, `/faq/`) to ensure the resulting graph reflects web-like connectivity rather than a single dominating hub.
 
 3. Directed Graph Construction
     - Uses NetworkX DiGraph
