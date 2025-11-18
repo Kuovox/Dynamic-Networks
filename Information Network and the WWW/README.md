@@ -97,7 +97,7 @@ Example:
 
 ```ruby
 100
-https://dblp.org/pid
+https://dblp.org
 https://dblp.org/pid/e/PErdos.html
 https://dblp.org/pid/s/PaulGSpirakis.html
 https://dblp.org/pid/89/8192.html
