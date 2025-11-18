@@ -51,11 +51,11 @@ python ./page_rank.py [OPTIONS]
 1. Crawl the web, compute PageRank, save graph, and generate log-log plot:
 
 ```bash
-python ./page_rank.py \
-  --crawler crawler.txt \
-  --loglogplot \
-  --crawler_graph out_graph.gml \
-  --pagerank_values node_rank.txt
+python page_rank.py --crawler crawler.txt \
+    --loglogplot \
+    --crawler_graph out_graph.gml \
+    --pagerank_values node_rank.txt \
+    --plot crawler_graph.png --plot_pick degree
 ```
 
 2. Use an existing graph instead of crawling:
@@ -96,11 +96,11 @@ The crawler configuration file contains:
 Example:
 
 ```ruby
-100
+200
 https://dblp.org
-https://dblp.org/pid/e/PErdos.html
-https://dblp.org/pid/s/PaulGSpirakis.html
-https://dblp.org/pid/89/8192.html
+https://dblp.org/search
+https://dblp.org/search?q=graph
+https://dblp.org/search?q=computer+science
 ```
 
 - max_nodes: Maximum nodes/pages to crawl
