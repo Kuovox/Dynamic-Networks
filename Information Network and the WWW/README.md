@@ -171,21 +171,25 @@ This plot helps reveal power-law degree behavior commonly found in web graphs.
 ## Approach Summary
 
 1. Parsing Input
-  - Reads crawler parameters or loads `.gml` file.
+    - Reads crawler parameters or loads `.gml` file.
+    
 2. Crawling Strategy
-  - BFS traversal
-  - Only HTML pages
-  - Only the given domain
-  - Avoids generating trivial star graphs (required by assignment)
+    - BFS traversal
+    - Only HTML pages
+    - Only the given domain
+    - Avoids generating trivial star graphs (required by assignment)
+
 3. Directed Graph Construction
-  - Uses NetworkX DiGraph
-  - Adds edges for every discovered hyperlink
+    - Uses NetworkX DiGraph
+    - Adds edges for every discovered hyperlink
+    
 4. PageRank Computation
-  - Uses damping factor α = 0.85
-  - Normalizes probabilities across nodes
+    - Uses damping factor α = 0.85
+    - Normalizes probabilities across nodes
+    
 5. Degree Distribution Plotting
-  - Computes histogram of node degrees
-  - Plotted in log-log scale using matplotlib
+    - Computes histogram of node degrees
+    - Plotted in log-log scale using matplotlib
 
 --- 
 
