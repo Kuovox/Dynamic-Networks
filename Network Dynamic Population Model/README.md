@@ -1,4 +1,4 @@
-# INetwork Dynamic Population Model Assignment
+# Network Dynamic Population Model Assignment
 
 **Course:** CECS 427 (Sec. 02)
 
