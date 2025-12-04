@@ -71,6 +71,7 @@ python ./dynamic_population.py graph.gml [OPTIONS]
 | `--plot`                       | Plots time-series curve of activations or infections.                   |                                 |
 | `--interactive`                | Displays graph state every round/day.                                   |                                 |
 
+
 ---
 
 ## Examples
